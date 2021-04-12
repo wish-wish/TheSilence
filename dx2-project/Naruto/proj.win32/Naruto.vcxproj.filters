@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\datamanager">
+      <UniqueIdentifier>{1f634c79-3ab3-4d79-82c9-cc968829ed07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gamescene">
+      <UniqueIdentifier>{a604aba4-57e7-4e73-9aeb-e6ff7f0c128b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gameunit">
+      <UniqueIdentifier>{d807af36-5f4a-47fa-ad3c-5a3c6a688526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\publicdef">
+      <UniqueIdentifier>{1df88712-92d7-420a-9807-2594e8a1586c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\tiledmap">
+      <UniqueIdentifier>{f54672df-651b-48ca-9d45-25b62e441f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ui">
+      <UniqueIdentifier>{3cad748f-6ea8-48cb-9f90-fb87e698af88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gameunit\article">
+      <UniqueIdentifier>{10b8e0af-a1ba-4e84-ad22-7363477c1b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gameunit\person">
+      <UniqueIdentifier>{710d318f-5159-4729-9d92-211bc5c2ea9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\gameunit\skill">
+      <UniqueIdentifier>{31e75106-a42c-4966-8f66-554305d8b36d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\datamanager\NFDataManager.cpp">
+      <Filter>Classes\datamanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\datamanager\NFEnemyWave.cpp">
+      <Filter>Classes\datamanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\datamanager\NFJsonTranslator.cpp">
+      <Filter>Classes\datamanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\datamanager\NFServerDataManager.cpp">
+      <Filter>Classes\datamanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\datamanager\shell.c">
+      <Filter>Classes\datamanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\datamanager\sqlite3.c">
+      <Filter>Classes\datamanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gamescene\NF3DWorldLayer.cpp">
+      <Filter>Classes\gamescene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gamescene\NFGameScene.cpp">
+      <Filter>Classes\gamescene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gamescene\NFRocker.cpp">
+      <Filter>Classes\gamescene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\NFBasicUnit.cpp">
+      <Filter>Classes\gameunit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\NFWorld3D.cpp">
+      <Filter>Classes\gameunit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\article\NFBasicArticle.cpp">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\article\NFBox.cpp">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\article\NFNPC.cpp">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\article\NFTransferDoor.cpp">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\skill\NFBasicSkill.cpp">
+      <Filter>Classes\gameunit\skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\skill\NFCommonAttack.cpp">
+      <Filter>Classes\gameunit\skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\person\NFBasicPerson.cpp">
+      <Filter>Classes\gameunit\person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\person\NFEnemy.cpp">
+      <Filter>Classes\gameunit\person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameunit\person\NFProtagonist.cpp">
+      <Filter>Classes\gameunit\person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFCreateTeamLayer.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFLoadingLayer.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFLoginScene.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFLogoScene.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFRoleSelectLayer.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFServerChangeLayer.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFServerChangeScrollLayer.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFTownRewardLayer.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\NFTownScene.cpp">
+      <Filter>Classes\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tiledmap\NFTMXTiledMap.cpp">
+      <Filter>Classes\tiledmap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\publicdef\PublicDef.cpp">
+      <Filter>Classes\publicdef</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\datamanager\NFDataManager.h">
+      <Filter>Classes\datamanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\datamanager\NFEnemyWave.h">
+      <Filter>Classes\datamanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\datamanager\NFJsonTranslator.h">
+      <Filter>Classes\datamanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\datamanager\NFServerDataManager.h">
+      <Filter>Classes\datamanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\datamanager\sqlite3.h">
+      <Filter>Classes\datamanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\datamanager\sqlite3ext.h">
+      <Filter>Classes\datamanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gamescene\NF3DWorldLayer.h">
+      <Filter>Classes\gamescene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gamescene\NFGameScene.h">
+      <Filter>Classes\gamescene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gamescene\NFRocker.h">
+      <Filter>Classes\gamescene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\NFBasicUnit.h">
+      <Filter>Classes\gameunit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\NFWorld3D.h">
+      <Filter>Classes\gameunit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\article\NFBasicArticle.h">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\article\NFBox.h">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\article\NFNPC.h">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\article\NFTransferDoor.h">
+      <Filter>Classes\gameunit\article</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\skill\NFBasicSkill.h">
+      <Filter>Classes\gameunit\skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\skill\NFCommonAttack.h">
+      <Filter>Classes\gameunit\skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\person\NFBasicPerson.h">
+      <Filter>Classes\gameunit\person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\person\NFEnemy.h">
+      <Filter>Classes\gameunit\person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameunit\person\NFProtagonist.h">
+      <Filter>Classes\gameunit\person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFCreateTeamLayer.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFLoadingLayer.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFLoginScene.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFLogoScene.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFRoleSelectLayer.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFServerChangeLayer.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFServerChangeScrollLayer.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFTownRewardLayer.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\NFTownScene.h">
+      <Filter>Classes\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tiledmap\NFTMXTiledMap.h">
+      <Filter>Classes\tiledmap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\publicdef\PublicDef.h">
+      <Filter>Classes\publicdef</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

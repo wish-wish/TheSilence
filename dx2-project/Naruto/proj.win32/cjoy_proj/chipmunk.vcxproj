@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>libchipmunk</ProjectName>
+    <ProjectGuid>{207BC7A9-CCF1-4F2F-A04D-45F72242AE25}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\..\_out\$(SolutionName)\$(Configuration).$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\..\_out\$(SolutionName)\_int\$(ProjectName)_$(Configuration).$(Platform)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\..\_out\$(SolutionName)\$(Configuration).$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\..\_out\$(SolutionName)\_int\$(ProjectName)_$(Configuration).$(Platform)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+    <BuildLog>
+      <Path>$(SolutionDir)..\..\..\_out\$(SolutionName)\_log\$(ProjectName)_$(Configuration).$(Platform).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+    <BuildLog>
+      <Path>$(SolutionDir)..\..\..\_out\$(SolutionName)\_log\$(ProjectName)_$(Configuration).$(Platform).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\chipmunk.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\chipmunk_ffi.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\chipmunk_private.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\chipmunk_types.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\chipmunk_unsafe.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpArbiter.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpBB.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpBody.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpPolyShape.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpShape.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpSpace.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpSpatialIndex.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\cpVect.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpConstraint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpDampedRotarySpring.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpDampedSpring.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpGearJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpGrooveJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpPinJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpPivotJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpRatchetJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpRotaryLimitJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpSimpleMotor.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\cpSlideJoint.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk\constraints\util.h" />
+    <ClInclude Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\prime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\chipmunk.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpArbiter.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpArray.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpBB.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpBBTree.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpBody.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpCollision.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpHashSet.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpPolyShape.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpShape.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSpace.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSpaceComponent.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSpaceHash.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSpaceQuery.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSpaceStep.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSpatialIndex.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpSweep1D.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\cpVect.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpConstraint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpDampedRotarySpring.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpDampedSpring.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpGearJoint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpGrooveJoint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpPinJoint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpPivotJoint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpRatchetJoint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpRotaryLimitJoint.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpSimpleMotor.c" />
+    <ClCompile Include="..\..\..\..\cocos2d-x-2.2.6\external\chipmunk\src\constraints\cpSlideJoint.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
